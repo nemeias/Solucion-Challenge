@@ -1,0 +1,278 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Inter", sans-serif;
+    height: 100%;
+    background: #F3F5FC;
+}
+
+/* globales */
+.boton {
+    border-radius: 20px;
+    line-height: 19px;
+    padding: 24px;
+    width: 328px;
+    font-size: 16px;
+
+    transition: all 500ms ease;
+    position: relative;
+}
+
+.boton:hover {
+    background: #86d3eb;
+    color:#000 !important;
+    font-weight: bold;
+}
+
+.textarea {
+    resize: none;
+    border: none;
+}
+
+.textarea:focus {
+    outline: none;
+}
+
+.container {
+    width: 1440px;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+.encriptador {
+    display: flex;
+    justify-content: space-around;
+    height: 96%;
+}
+
+.encriptadorImg {
+    margin-top: 20px;
+}
+
+/* input */
+.input {
+    height: 70%;
+    align-self: center;
+}
+
+.inputForm {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.inputTexto {
+    height: 80%;
+    font-size: 32px;
+    line-height: 150%;
+    background-color: inherit;
+}
+
+.inputTexto::placeholder{
+    color: #0f52a5;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+.inputExtra {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.inputExtra>p {
+    margin-left: 8px;
+    display: inline-block;
+    font-size: 12px;
+    line-height: 18px;
+    color: #495057;
+}
+
+.inputAdvertencia {
+    font-size: 12px;
+    line-height: 150%;
+    color: #495057;
+}
+
+.botones {
+    display: flex;
+    gap: 20px;
+}
+.btnEncriptar {
+    background: #0a3871;
+    color: #ffffff;
+    border: 1px solid #0a3871;
+}
+
+.btnDesencriptar {
+    background: #D8DFE8;
+    border: 1px solid #0a3871;
+    color: #0a3871;
+}
+
+.output {
+    height: 80%;
+    width: 400px;
+    align-self: center;
+    background-color: #FFFFFF;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    border-radius: 32px;
+    padding: 5px;
+    overflow: hidden;    
+}
+
+.outputForm {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    position: relative;
+}
+
+.outputTexto {
+    background-color: inherit;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    z-index: 5;
+}
+
+.outputTextarea {
+    height: 90%;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 24px;
+    line-height: 150%;
+    background-color: #FFFFFF;
+}
+
+.btnCo {
+    border: 1px solid #0a3871;
+    background: #D8DFE8;
+    color: #0a3871;
+    width: 90%;
+}
+
+.outputTapa {
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    background-color: #FFFFFF;
+}
+.outputParrado1 {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.outputParrado2 {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+}
+
+/* footer */
+.footer {
+    height: auto;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 120%;
+    text-align: center;
+}
+
+/* media 768 */
+
+@media (max-width: 768px){
+    .container{
+        width: 100%;
+    }
+
+    .encriptador {
+        flex-direction: column;
+    }
+
+    .output {
+        width: 90%;
+        height: 30%;
+        margin: 20px 0;
+        overflow: hidden;
+        gap: 20px;
+    }
+
+    .outputForm {
+        align-items: center;
+    }
+    .outputTextarea {
+        margin-bottom: 20px;
+    }
+
+    .outputTapa {
+        height: 100%;
+        width: 90%;
+    }
+
+    .outputImg {
+        display: none;
+    }
+}
+
+/* media 480 */
+
+@media (max-width: 480px) {
+    .container {
+        width: 90%;
+        height: 100%;
+    }
+
+    .encriptadorLogo {
+        margin-bottom: 20px;
+    }
+    .inputExtra {
+        width: 100%;
+        margin-bottom: 5px;
+        flex-direction: column-reverse;
+    }
+
+    .inputTexto {
+        height: 300px;
+    }
+    .botones {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .inputTexto {
+        width: 90%;
+    }
+    .output {
+        width: 100%;
+        height: 300px;
+    }
+
+    .footer {
+        flex-direction: column;
+        gap: 5px;
+        align-items: center;
+    }
+}

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"&amp;gt;>
+        <title>Reto ONE</title>
+        <link rel="stylesheet" href="css/reset.css"/>
+        <link rel="stylesheet" href="css/style.css"/>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&display=swap" rel="stylesheet">
+        <script defer src="https://app.embed.im/snow.js"> </script>  <!-- nieve de navidad  -->
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    </head>
+    <body>
+
+        <div class="container">
+            <div class="encriptador">
+                <h1 class="encriptadorLogo"><img class="encriptadorImg" src="img/Logo.png" alt=""></h1>
+                <div class="input">
+                    <form class="inputForm" action="">
+                        <textarea class="inputTexto textarea" id="texto" type="text" placeholder="Ingrese el texto aqui"></textarea>
+                        <div class="inputExtra">
+                            <p class="inputAdvertencia"> <span><img src="./img/Vector.svg" alt="vetor"></span> Solo letras minúsculas y sin acentos</p>
+                        </div>
+                        <div class="botones">
+                            <input class="btnEncriptar boton" id="btnEnc" type="button" value="Encriptar">
+                            <input class="btnDesencriptar boton" id="btnDesenc" type="button" value="Desencriptar">                      
+                        </div>
+                    </form>
+    
+                </div>
+    
+    
+    
+                <div class="output">
+                    <form class="outputForm" action="">
+                        <div class="outputTexto">
+                            <textarea class="outputTextarea textarea" name="tArea" id="tArea" cols="" rows=""></textarea>
+                            <input class="btnCo boton" id="btnCop" type="button" value="Copiar">
+                        </div>
+                        <div id="tapa" class="outputTapa">
+                            <img class="outputImg" src="img/Muñeco.png" alt="">
+                            <p class="outputParrado1">Ningún mensaje fue encontrado</p>
+                            <p class="outputParrado2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                        </div>
+                    </form>
+                </div>
+            </div>
+    
+            <footer>   
+                <div class="footer">
+                    <p>&copy Hecho por Nehemias</p>
+                </div>
+    
+            </footer>
+        </div>
+    </body>
+
+    <script src="js/main.js"></script>
+</html>
